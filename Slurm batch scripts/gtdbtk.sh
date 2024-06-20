@@ -8,7 +8,7 @@
 #SBATCH --error=logs/gtdbtk.%J.err
 #SBATCH --output=logs/gtdbtk.%J.out
 
-source /home/sam/miniconda3/bin/activate gtdbtk
+source /home/USER_HERE/miniconda3/bin/activate gtdbtk
 
 cd /home/sam/Temp_actinos
 
