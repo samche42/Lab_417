@@ -61,4 +61,6 @@ conda deactivate
 ```
 
 ### Delete a conda env and everything in it
+```
 conda env remove --name name_of_env_here
+```
