@@ -12,7 +12,7 @@
 
 cd /path/to/faa/files
 
-source /home/sam/miniconda3/bin/activate diamond
+source /home/USER_NAME_HERE/miniconda3/bin/activate diamond
 
 for file in `ls *.faa`
 
