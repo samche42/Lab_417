@@ -10,6 +10,8 @@
 
 cd /path/to/raw/Illumina/reads
 
+source /home/USER_HERE/miniconda3/bin/activate trimmomatic
+
 trimmomatic PE -baseout your_sample_name_here.fastq \
 fwd_reads.fastq rev_reads.fastq \
 ILLUMINACLIP:/home/sam/miniconda3/pkgs/trimmomatic-0.39-hdfd78af_2/share/trimmomatic/adapters/TruSeq3-PE.fa:2:30:10 \
