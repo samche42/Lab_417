@@ -12,7 +12,7 @@
 
 cd /path/to/your/MAGs
 
-source /home/sam/miniconda3/bin/activate prodigal
+source /home/USER_NAME_HERE/miniconda3/bin/activate prodigal
 
 for genome_bin in `ls *.fasta`
 do
