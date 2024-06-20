@@ -8,7 +8,7 @@
 #SBATCH --error=logs/checkm.%J.err
 #SBATCH --output=logs/checkm.%J.out
 
-source /home/sam/miniconda3/bin/activate checkm2
+source /home/USER_HERE/miniconda3/bin/activate checkm2
 
 cd /home/sam/Temp_actinos
 
