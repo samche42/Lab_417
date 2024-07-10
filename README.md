@@ -21,7 +21,7 @@ create -y -n checkm2 -c bioconda -c conda-forge checkm2 'python>=3.7, <3.9'
 ```
 conda create -y -n antismash
 conda activate antismash
-conda install -y -c bioconda antismash=7.1.0
+conda install -y -c bioconda -c conda-forge antismash=7.1.0
 conda deactivate
 ```
 
