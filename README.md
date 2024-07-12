@@ -60,6 +60,15 @@ conda install -y -c bioconda samtools
 conda deactivate
 ```
 
+### Autometa 2.0
+```
+conda create -y -n autometa
+conda activate autometa
+conda install -y -c bioconda -c conda-forge autometa
+autometa-config --section databases --option markers --value /home/sam/Databases/autometa_markers #Note: Leave this path as is, do not change to your user name
+autometa-config --section databases --option ncbi --value /home/sam/Databases/autometa_ncbi_db #Same here - leave it as is
+```
+
 ### Delete a conda env and everything in it
 ```
 conda env remove --name name_of_env_here
