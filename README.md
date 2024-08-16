@@ -79,7 +79,7 @@ sbatch autometa_flagged.sh \
 -s basename_of_choice \
 -n /home/sam/Databases/autometa_ncbi_sam \
 -m /home/sam/Databases/autometa_markers \
--l 3000 -v spades -c 12
+-l 3000 -v spades -c 16
 ```
 
 Example:
@@ -91,7 +91,7 @@ sbatch autometa_flagged.sh \
 -s Test_run_output \
 -n /home/sam/Databases/autometa_ncbi_sam \
 -m /home/sam/Databases/autometa_markers \
--l 3000 -v spades -c 12
+-l 3000 -v spades -c 16
 ```
 
 ### Delete a conda env and everything in it
