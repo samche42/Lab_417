@@ -79,7 +79,7 @@ sbatch autometa_flagged.sh \
 -s basename_of_choice \
 -n /home/sam/Databases/autometa_ncbi_sam \
 -m /home/sam/Databases/autometa_markers \
--l 3000 -v spades -c 16
+-l 3000 -v spades -c 8
 ```
 
 Example:
@@ -91,7 +91,7 @@ sbatch autometa_flagged.sh \
 -s Test_run_output \
 -n /home/sam/Databases/autometa_ncbi_sam \
 -m /home/sam/Databases/autometa_markers \
--l 3000 -v spades -c 16
+-l 3000 -v spades -c 8
 ```
 
 **NB:** If you would like to change the number of CPUs used per job, you'll have to change this number next to the ```-c``` flag AND within the ```#SBATCH --ntasks-per-node=16``` line in the autometa_flagged.sh file. 
