@@ -65,8 +65,33 @@ conda deactivate
 conda create -y -n autometa
 conda activate autometa
 conda install -y -c bioconda -c conda-forge autometa
-autometa-config --section databases --option markers --value /home/sam/Databases/autometa_markers #Note: Leave this path as is, do not change to your user name
-autometa-config --section databases --option ncbi --value /home/sam/Databases/autometa_ncbi_db #Same here - leave it as is
+autometa-config --section databases --option markers --value /home/sam/Databases/autometa_markers #Note: Leave this path as is, do not change it to your user name
+autometa-config --section databases --option ncbi --value /home/sam/Databases/autometa_ncbi_sam #Same here - leave it as is
+```
+
+#### Autometa Slurm script
+I've created a slurm script for Autometa that uses flagged parameter input so that you can run several jobs on different data simultaneously. The slurm script is saved in the scripts folder under autometa_flagged.sh. You can submit it to the slurm scheduler with:
+
+```
+sbatch autometa_flagged.sh \
+-o /path/to/where/output/should/go \
+-a /path/to/scaffolds.fasta \
+-s basename_of_choice \
+-n /home/sam/Databases/autometa_ncbi_sam \
+-m /home/sam/Databases/autometa_markers \
+-l 3000 -v spades -c 12
+```
+
+Example:
+
+```
+sbatch autometa_flagged.sh \
+-o /home/sam/Autometa_test_run \
+-a /home/sam/Autometa_test_run/003D_scaffolds.fasta \
+-s Test_run_output \
+-n /home/sam/Databases/autometa_ncbi_sam \
+-m /home/sam/Databases/autometa_markers \
+-l 3000 -v spades -c 12
 ```
 
 ### Delete a conda env and everything in it
