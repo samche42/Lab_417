@@ -51,6 +51,9 @@ then
     exit 1
 fi
 
+eval "$(conda shell.bash hook)"
+conda activate antismash
+
 echo 
 echo "Your current conda environment is: " $CONDA_DEFAULT_ENV
 
@@ -441,3 +444,5 @@ for kingdom in ${kingdoms[@]};do
         --output-taxonomy $output_taxonomy \
         --output-metabins $output_metabins
 done
+
+conda deactivate
