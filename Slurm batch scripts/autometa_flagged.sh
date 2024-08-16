@@ -52,7 +52,7 @@ then
 fi
 
 eval "$(conda shell.bash hook)"
-conda activate antismash
+conda activate autometa
 
 echo 
 echo "Your current conda environment is: " $CONDA_DEFAULT_ENV
