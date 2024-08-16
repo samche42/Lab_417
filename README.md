@@ -94,6 +94,8 @@ sbatch autometa_flagged.sh \
 -l 3000 -v spades -c 16
 ```
 
+**NB:** If you would like to change the number of CPUs used per job, you'll have to change this number next to the ```-c``` flag AND within the ```#SBATCH --ntasks-per-node=16``` line in the autometa_flagged.sh file. 
+
 ### Delete a conda env and everything in it
 ```
 conda env remove --name name_of_env_here
