@@ -7,12 +7,13 @@
 #SBATCH --mem 16G
 #SBATCH --error=blastp.%J.err
 #SBATCH --output=blastp.%J.out
-#SBATCH --mail-user=samche42@gmail.com
+#SBATCH --mail-user=your_email@gmail.com
 #SBATCH --mail-type=ALL
 
-cd /path/to/faa/files
+cd /path/to/where/faa/files/are
 
-source /home/USER_NAME_HERE/miniconda3/bin/activate diamond
+eval "$(conda shell.bash hook)"
+conda activate diamond
 
 for file in `ls *.faa`
 
