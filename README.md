@@ -35,6 +35,13 @@ conda install -y -c bioconda prodigal blast tbl2asn prokka
 conda deactivate
 ```
 
+### Diamond blastp
+```
+conda create -y -n blastp
+conda activate blastp
+conda install -y bioconda::diamond
+```
+
 ### KoFamSCAN
 ```
 conda create --name kofamscan
