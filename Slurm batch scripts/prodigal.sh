@@ -5,8 +5,8 @@
 #SBATCH -n 1 # Tasks
 #SBATCH --cpus-per-task=10
 #SBATCH --mem 10G
-#SBATCH --error=prokka.%J.err
-#SBATCH --output=prokka.%J.out
+#SBATCH --error=prodigal.%J.err
+#SBATCH --output=prodigal.%J.out
 #SBATCH --mail-user=your_email@gmail.com
 #SBATCH --mail-type=ALL
 
