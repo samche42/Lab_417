@@ -5,8 +5,8 @@
 #SBATCH -n 1 # Tasks
 #SBATCH --mem 100G
 #SBATCH --cpus-per-task=36
-#SBATCH --error=logs/phylophlan.%J.err
-#SBATCH --output=logs/phylophlan.%J.out
+#SBATCH --error=phylophlan.%J.err
+#SBATCH --output=phylophlan.%J.out
 
 cd /path/to/phylophlan/input/files
 
