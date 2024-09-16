@@ -5,8 +5,8 @@
 #SBATCH -n 1 # Tasks
 #SBATCH --cpus-per-task=8
 #SBATCH --mem 50G
-#SBATCH --error=logs/raxml.%J.err
-#SBATCH --output=logs/raxml.%J.out
+#SBATCH --error=raxml.%J.err
+#SBATCH --output=raxml.%J.out
 
 cd /path/to/Phylophlan_output
 
