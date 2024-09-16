@@ -5,8 +5,8 @@
 #SBATCH -n 1 # Tasks
 #SBATCH --cpus-per-task=24
 #SBATCH --mem 500G
-#SBATCH --error=logs/spades.%J.err
-#SBATCH --output=logs/spades.%J.out
+#SBATCH --error=spades.%J.err
+#SBATCH --output=spades.%J.out
 
 cd /path/to/reads
 
