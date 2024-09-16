@@ -5,8 +5,8 @@
 #SBATCH -n 1 # Tasks
 #SBATCH --cpus-per-task=16
 #SBATCH --mem 100G
-#SBATCH --error=logs/gtdbtk.%J.err
-#SBATCH --output=logs/gtdbtk.%J.out
+#SBATCH --error=gtdbtk.%J.err
+#SBATCH --output=gtdbtk.%J.out
 
 source /home/USER_HERE/miniconda3/bin/activate gtdbtk
 
