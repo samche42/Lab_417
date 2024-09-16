@@ -5,8 +5,8 @@
 #SBATCH -n 1 # Tasks
 #SBATCH --cpus-per-task=10
 #SBATCH --mem 5G
-#SBATCH --error=logs/checkm.%J.err
-#SBATCH --output=logs/checkm.%J.out
+#SBATCH --error=checkm.%J.err
+#SBATCH --output=checkm.%J.out
 
 source /home/USER_HERE/miniconda3/bin/activate checkm2
 
