@@ -31,7 +31,7 @@ conda create --name prokka
 conda activate prokka
 conda install -y -c biobuilds perl=5.22
 conda install -y -c conda-forge parallel
-conda install -y -c bioconda prodigal blast tbl2asn prokka
+conda install -y -c bioconda prodigal blast=2.2 tbl2asn prokka
 conda deactivate
 ```
 
