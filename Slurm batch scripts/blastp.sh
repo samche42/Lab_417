@@ -13,7 +13,7 @@
 cd /path/to/where/faa/files/are
 
 eval "$(conda shell.bash hook)"
-conda activate diamond
+conda activate blastp
 
 for file in `ls *.faa`
 
