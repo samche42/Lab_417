@@ -25,6 +25,14 @@ conda install -y -c bioconda -c conda-forge antismash=7.1.0
 conda deactivate
 ```
 
+### CAT (Contig Annotation Tool)
+```
+conda create -y -n CAT
+conda activate CAT
+conda install bioconda::cat
+conda deactivate
+```
+
 ### Prokka
 ```
 conda create --name prokka
