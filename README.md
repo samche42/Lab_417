@@ -14,7 +14,7 @@ conda deactivate
 
 ### CheckM2
 ```
-create -y -n checkm2 -c bioconda -c conda-forge checkm2 'python>=3.7, <3.9'
+conda create -y -n checkm2 -c bioconda -c conda-forge checkm2 'python>=3.7, <3.9'
 ```
 
 ### antiSMASH
